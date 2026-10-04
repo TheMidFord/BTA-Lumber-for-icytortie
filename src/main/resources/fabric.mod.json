@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "lumber",
 	"version": "${version}",
-	"name": "Example Mod",
+	"name": "Lumber",
 	"description": "This mod aims to help new BTA modders.",
 	"authors": [
 		"Turnip Labs"
@@ -16,11 +16,14 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"malicedev.lumber.Main"
+		],
+		"client": [
+			"malicedev.lumber.ModClient"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+      "lumber.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
