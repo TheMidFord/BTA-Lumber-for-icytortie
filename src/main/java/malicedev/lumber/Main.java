@@ -10,7 +10,7 @@ import turniplabs.halplibe.util.dependency.Key;
 
 import java.util.Properties;
 
-public class 	Main implements ModInitializer {
+public class Main implements ModInitializer {
 	public static final String MOD_ID = HalpLibe.registerMod("lumber", true);
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static int itemId;
