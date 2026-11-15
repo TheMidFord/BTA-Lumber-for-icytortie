@@ -1,5 +1,6 @@
 package malicedev.lumber;
 
+import malicedev.lumber.blocklogic.BlockLogicClayColored;
 import malicedev.lumber.blocklogic.BlockLogicFirewood;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockLogic;
@@ -35,6 +36,42 @@ public class ModBlocks {
 	public static Block<?> FirewoodStairsThorn;
 	public static Block<?> FirewoodStairsPalm;
 	public static Block<?> FirewoodStairsScorched;
+	public static Block<BlockLogicSlab> FirewoodSlabOak;
+	public static Block<BlockLogicSlab> FirewoodSlabOakMossy;
+	public static Block<BlockLogicSlab> FirewoodSlabPine;
+	public static Block<BlockLogicSlab> FirewoodSlabBirch;
+	public static Block<BlockLogicSlab> FirewoodSlabCherry;
+	public static Block<BlockLogicSlab> FirewoodSlabEucalyptus;
+	public static Block<BlockLogicSlab> FirewoodSlabThorn;
+	public static Block<BlockLogicSlab> FirewoodSlabPalm;
+	public static Block<BlockLogicSlab> FirewoodSlabScorched;
+	public static Block<?> LumberOak;
+	public static Block<?> LumberOakMossy;
+	public static Block<?> LumberPine;
+	public static Block<?> LumberBirch;
+	public static Block<?> LumberCherry;
+	public static Block<?> LumberEucalyptus;
+	public static Block<?> LumberThorn;
+	public static Block<?> LumberPalm;
+	public static Block<?> LumberScorched;
+	public static Block<?> LumberStairsOak;
+	public static Block<?> LumberStairsOakMossy;
+	public static Block<?> LumberStairsPine;
+	public static Block<?> LumberStairsBirch;
+	public static Block<?> LumberStairsCherry;
+	public static Block<?> LumberStairsEucalyptus;
+	public static Block<?> LumberStairsThorn;
+	public static Block<?> LumberStairsPalm;
+	public static Block<?> LumberStairsScorched;
+	public static Block<BlockLogicSlab> LumberSlabOak;
+	public static Block<BlockLogicSlab> LumberSlabOakMossy;
+	public static Block<BlockLogicSlab> LumberSlabPine;
+	public static Block<BlockLogicSlab> LumberSlabBirch;
+	public static Block<BlockLogicSlab> LumberSlabCherry;
+	public static Block<BlockLogicSlab> LumberSlabEucalyptus;
+	public static Block<BlockLogicSlab> LumberSlabThorn;
+	public static Block<BlockLogicSlab> LumberSlabPalm;
+	public static Block<BlockLogicSlab> LumberSlabScorched;
 	public static Block<?> BrickWhite;
 	public static Block<?> BrickOrange;
 	public static Block<?> BrickMagenta;
@@ -83,6 +120,22 @@ public class ModBlocks {
 	public static Block<BlockLogicSlab> BrickSlabGreen;
 	public static Block<BlockLogicSlab> BrickSlabRed;
 	public static Block<BlockLogicSlab> BrickSlabBlack;
+	public static Block<?> ClayWhite;
+	public static Block<?> ClayOrange;
+	public static Block<?> ClayMagenta;
+	public static Block<?> ClayLightBlue;
+	public static Block<?> ClayYellow;
+	public static Block<?> ClayLime;
+	public static Block<?> ClayPink;
+	public static Block<?> ClayGray;
+	public static Block<?> ClayLightGray;
+	public static Block<?> ClayCyan;
+	public static Block<?> ClayPurple;
+	public static Block<?> ClayBlue;
+	public static Block<?> ClayBrown;
+	public static Block<?> ClayGreen;
+	public static Block<?> ClayRed;
+	public static Block<?> ClayBlack;
 
 	public static void init(){
 		//BLOCKS
@@ -142,6 +195,60 @@ public class ModBlocks {
 			.setBlockSound(BlockSounds.WOOD)
 			.build("firewood_scorched","firewood_scorched",blockId++, (block)-> new BlockLogicFirewood(block));
 			//LUMBER
+		LumberOak = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_oak","lumber_oak",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberOakMossy = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_oak_mossy","lumber_oak_mossy",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberPine = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_pine","lumber_pine",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberBirch = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_birch","lumber_birch",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberCherry = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_cherry","lumber_cherry",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberEucalyptus = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_eucalyptus","lumber_eucalyptus",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberThorn = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_thorn","lumber_thorn",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberPalm = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_palm","lumber_palm",blockId++, (block)-> new BlockLogicFirewood(block));
+		LumberScorched = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_scorched","lumber_scorched",blockId++, (block)-> new BlockLogicFirewood(block));
 			//BRICKS
 		BrickWhite = new BlockBuilder(MOD_ID)
 			.setHardness(2)
@@ -242,6 +349,106 @@ public class ModBlocks {
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 			.setBlockSound(BlockSounds.STONE)
 			.build("brick_black","brick_black",blockId++, (block)-> new BlockLogic(block,Materials.STONE));
+			//CLAY
+		ClayWhite = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_white","clay_white",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayWhite));
+		ClayOrange = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_orange","clay_orange",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayOrange));
+		ClayMagenta = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_magenta","clay_magenta",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayMagenta));
+		ClayLightBlue = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_lightblue","clay_lightblue",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayLightBlue));
+
+		ClayYellow = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_yellow","clay_yellow",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayYellow));
+		ClayLime = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_lime","clay_lime",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayLime));
+		ClayPink = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_pink","clay_pink",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayPink));
+		ClayGray = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_gray","clay_gray",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayGray));
+
+		ClayLightGray = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_lightgray","clay_lightgray",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayLightGray));
+		ClayCyan = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_cyan","clay_cyan",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayCyan));
+		ClayPurple = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_purple","clay_purple",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayPurple));
+		ClayBlue = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_blue","clay_blue",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayBlue));
+
+		ClayBrown = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_brown","clay_brown",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayBrown));
+		ClayGreen = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_green","clay_green",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayGreen));
+		ClayRed = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_red","clay_red",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayRed));
+		ClayBlack = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL)
+			.setBlockSound(BlockSounds.GRAVEL)
+			.build("clay_black","clay_black",blockId++, (block)-> new BlockLogicClayColored(block,()->ModItems.ClayBlack));
 
 		//STAIRS
 			//FIREWOOD
@@ -300,6 +507,60 @@ public class ModBlocks {
 			.setBlockSound(BlockSounds.WOOD)
 			.build("firewood_stairs_scorched","stairs_firewood_scorched",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.FirewoodOak));
 			//LUMBER
+		LumberStairsOak = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_oak","stairs_lumber_oak",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsOakMossy = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_oak_mossy","stairs_lumber_oak_mossy",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsPine = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_pine","stairs_lumber_pine",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsBirch = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_birch","stairs_lumber_birch",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsCherry = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_cherry","stairs_lumber_cherry",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsEucalyptus = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_eucalyptus","stairs_lumber_eucalyptus",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsThorn = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_thorn","stairs_lumber_thorn",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsPalm = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_palm","stairs_lumber_palm",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
+		LumberStairsScorched = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_stairs_scorched","stairs_lumber_scorched",blockId++, (block) -> new BlockLogicStairs(block, ModBlocks.LumberOak));
 			//BRICKS
 		BrickStairsWhite = new BlockBuilder(MOD_ID)
 			.setHardness(2)
@@ -402,7 +663,115 @@ public class ModBlocks {
 			.build("brick_stairs_black","stairs_brick_black",blockId++, (block)-> new BlockLogicStairs(block,ModBlocks.BrickBlack));
 		//SLABS
 			//FIREWOOD
+		FirewoodSlabOak = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_oak","slab_firewood_oak",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabOakMossy = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_oak_mossy","slab_firewood_oak_mossy",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabPine = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_pine","slab_firewood_pine",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabBirch = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_birch","slab_firewood_birch",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabCherry = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_cherry","slab_firewood_cherry",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabEucalyptus = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_eucalyptus","slab_firewood_eucalyptus",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabThorn = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_thorn","slab_firewood_thorn",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabPalm = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_palm","slab_firewood_palm",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
+		FirewoodSlabScorched = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("firewood_slab_scorched","slab_firewood_scorched",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.FirewoodOak));
 			//LUMBER
+		LumberSlabOak = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_oak","slab_lumber_oak",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabOakMossy = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_oak_mossy","slab_lumber_oak_mossy",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabPine = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_pine","slab_lumber_pine",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabBirch = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_birch","slab_lumber_birch",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabCherry = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_cherry","slab_lumber_cherry",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabEucalyptus = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_eucalyptus","slab_lumber_eucalyptus",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabThorn = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_thorn","slab_lumber_thorn",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabPalm = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_palm","slab_lumber_palm",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
+		LumberSlabScorched = new BlockBuilder(MOD_ID)
+			.setHardness(2)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.Category(CreativeInventoryCategory.MISCELLANEOUS))
+			.setTags(BlockTags.MINEABLE_BY_AXE)
+			.setBlockSound(BlockSounds.WOOD)
+			.build("lumber_slab_scorched","slab_lumber_scorched",blockId++, (block) -> new BlockLogicSlab(block, ModBlocks.LumberOak));
 			//BRICKS
 		BrickSlabWhite = new BlockBuilder(MOD_ID)
 			.setHardness(2)

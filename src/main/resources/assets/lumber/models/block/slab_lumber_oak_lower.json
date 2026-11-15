@@ -1,11 +1,11 @@
 {
-	"format_version": "1.21.11",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "lumber:block/lumber_eucalyptus_top",
-		"1": "lumber:block/lumber_eucalyptus_side",
-		"particle": "lumber:block/lumber_eucalyptus_top"
+		"0": "lumber:block/lumber_oak_top",
+		"1": "lumber:block/lumber_oak_side",
+		"particle": "lumber:block/lumber_oak_top"
 	},
 	"elements": [
 		{
@@ -20,6 +20,5 @@
 				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#1", "cullface": "down"}
 			}
 		}
-	],
-	"display": {}
+	]
 }
