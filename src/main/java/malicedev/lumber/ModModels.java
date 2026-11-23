@@ -107,6 +107,52 @@ public class ModModels {
 			.setTex("lumber:block/lumber_scorched_top", Side.TOP)
 			.setTex("lumber:block/lumber_scorched_top",Side.BOTTOM)
 		);
+			//STRIPPED LOGS
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedOak)
+			.setAllTextures("lumber:block/stripped_oak_side")
+			.setTex("lumber:block/stripped_oak_top", Side.TOP)
+			.setTex("lumber:block/stripped_oak_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedOakMossy)
+			.setAllTextures("lumber:block/stripped_oak_mossy_side")
+			.setTex("lumber:block/stripped_oak_mossy_top", Side.TOP)
+			.setTex("lumber:block/stripped_oak_mossy_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedPine)
+			.setAllTextures("lumber:block/stripped_pine_side")
+			.setTex("lumber:block/stripped_pine_top", Side.TOP)
+			.setTex("lumber:block/stripped_pine_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedBirch)
+			.setAllTextures("lumber:block/stripped_birch_side")
+			.setTex("lumber:block/stripped_birch_top", Side.TOP)
+			.setTex("lumber:block/stripped_birch_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedCherry)
+			.setAllTextures("lumber:block/stripped_cherry_side")
+			.setTex("lumber:block/stripped_cherry_top", Side.TOP)
+			.setTex("lumber:block/stripped_cherry_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedEucalyptus)
+			.setAllTextures("lumber:block/stripped_eucalyptus_side")
+			.setTex("lumber:block/stripped_eucalyptus_top", Side.TOP)
+			.setTex("lumber:block/stripped_eucalyptus_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedThorn)
+			.setAllTextures("lumber:block/stripped_thorn_side")
+			.setTex("lumber:block/stripped_thorn_top", Side.TOP)
+			.setTex("lumber:block/stripped_thorn_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedPalm)
+			.setAllTextures("lumber:block/stripped_palm_side")
+			.setTex("lumber:block/stripped_palm_top", Side.TOP)
+			.setTex("lumber:block/stripped_palm_top",Side.BOTTOM)
+		);
+		dispatcher.addDispatch(new BlockModelAxisAligned<>(ModBlocks.LogStrippedScorched)
+			.setAllTextures("lumber:block/stripped_scorched_side")
+			.setTex("lumber:block/stripped_scorched_top", Side.TOP)
+			.setTex("lumber:block/stripped_scorched_top",Side.BOTTOM)
+		);
 			//BRICKS
 		dispatcher.addDispatch(new BlockModelStandard<>(ModBlocks.BrickWhite)
 			.setAllTextures("lumber:block/brick_clay_white")
@@ -158,6 +204,9 @@ public class ModModels {
 		);
 		dispatcher.addDispatch(new BlockModelStandard<>(ModBlocks.BrickBlack)
 			.setAllTextures("lumber:block/brick_clay_black")
+		);
+		dispatcher.addDispatch(new BlockModelStandard<>(ModBlocks.BrickVariegated)
+			.setAllTextures("lumber:block/brick_clay_variegated")
 		);
 		//CLAY
 		dispatcher.addDispatch(new BlockModelStandard<>(ModBlocks.ClayWhite)
@@ -287,6 +336,8 @@ public class ModModels {
 		);
 		dispatcher.addDispatch(new BlockModelStairs<>(ModBlocks.BrickStairsBlack)
 		);
+		dispatcher.addDispatch(new BlockModelStairs<>(ModBlocks.BrickStairsVariegated)
+		);
 
 		//SLABS
 			//FIREWOOD
@@ -382,52 +433,12 @@ public class ModModels {
 		);
 		dispatcher.addDispatch(new BlockModelSlab<>(ModBlocks.BrickSlabBlack)
 		);
+		dispatcher.addDispatch(new BlockModelSlab<>(ModBlocks.BrickSlabVariegated)
+		);
 	}
 
 
 	public void initItemModels(ItemModelDispatcher dispatcher) {
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayWhite,null).setIcon("lumber:item/clay_white"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayLightGray,null).setIcon("lumber:item/clay_lightgray"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayGray,null).setIcon("lumber:item/clay_gray"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayBlack,null).setIcon("lumber:item/clay_black"));
-
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayRed,null).setIcon("lumber:item/clay_red"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayBrown,null).setIcon("lumber:item/clay_brown"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayOrange,null).setIcon("lumber:item/clay_orange"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayYellow,null).setIcon("lumber:item/clay_yellow"));
-
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayLime,null).setIcon("lumber:item/clay_lime"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayGreen,null).setIcon("lumber:item/clay_green"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayCyan,null).setIcon("lumber:item/clay_cyan"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayLightBlue,null).setIcon("lumber:item/clay_lightblue"));
-
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayBlue,null).setIcon("lumber:item/clay_blue"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayPurple,null).setIcon("lumber:item/clay_purple"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayMagenta,null).setIcon("lumber:item/clay_magenta"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.ClayPink,null).setIcon("lumber:item/clay_pink"));
-
-
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickWhite,null).setIcon("lumber:item/brick_clay_white"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickLightGray,null).setIcon("lumber:item/brick_clay_lightgray"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickGray,null).setIcon("lumber:item/brick_clay_gray"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickBlack,null).setIcon("lumber:item/brick_clay_black"));
-
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickRed,null).setIcon("lumber:item/brick_clay_red"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickBrown,null).setIcon("lumber:item/brick_clay_brown"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickOrange,null).setIcon("lumber:item/brick_clay_orange"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickYellow,null).setIcon("lumber:item/brick_clay_yellow"));
-
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickLime,null).setIcon("lumber:item/brick_clay_lime"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickGreen,null).setIcon("lumber:item/brick_clay_green"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickCyan,null).setIcon("lumber:item/brick_clay_cyan"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickLightBlue,null).setIcon("lumber:item/brick_clay_lightblue"));
-
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickBlue,null).setIcon("lumber:item/brick_clay_blue"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickPurple,null).setIcon("lumber:item/brick_clay_purple"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickMagenta,null).setIcon("lumber:item/brick_clay_magenta"));
-		dispatcher.addDispatch(new ItemModelStandard(ModItems.BrickPink,null).setIcon("lumber:item/brick_clay_pink"));
-
-
 	}
 
 	public void initEntityModels(EntityRendererDispatcher entityRenderDispatcher) {

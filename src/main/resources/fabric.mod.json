@@ -2,10 +2,11 @@
 	"schemaVersion": 1,
 	"id": "lumber",
 	"version": "${version}",
-	"name": "Lumber",
-	"description": "This mod aims to help new BTA modders.",
+	"name": "Bricks and Lumber",
+	"description": "Random building block stuff",
 	"authors": [
-		"Turnip Labs"
+		"TheMidford",
+		"icytortie"
 	],
 	"contact": {
 		"homepage": "",
